@@ -1,5 +1,8 @@
 # Set ENV variables
-source ~/.exports
+[[ -r "$HOME/.exports" ]] && source "$HOME/.exports"
+
+# Prompt
+[[ -r "$HOME/.bash_prompt" ]] && source "$HOME/.bash_prompt"
 
 # Init RVM
 [[ -r "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

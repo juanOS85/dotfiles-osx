@@ -1,8 +1,12 @@
+# Prefer US English and use UTF-8
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US"
+
+# Larger bash history (default is 500)
+export HISTFILESIZE=10000
+export HISTSIZE=10000
+
 # Set ENV variables
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export NVM_DIR=$HOME/.nvm
-
-# Prefer US English and use UTF-8
-export LC_ALL="en_US.UTF-8"
-export LANG="en_US"
