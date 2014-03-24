@@ -1,0 +1,4 @@
+# Better file list visuatlization
+
+# Always use color output for `ls`
+alias ls="ls -FG"

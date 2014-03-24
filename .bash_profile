@@ -1,6 +1,9 @@
 # Set ENV variables
 [[ -r "$HOME/.exports" ]] && source "$HOME/.exports"
 
+# Load alises
+[[ -r "$HOME/.aliases" ]] && source "$HOME/.aliases"
+
 # Prompt
 [[ -r "$HOME/.bash_prompt" ]] && source "$HOME/.bash_prompt"
 

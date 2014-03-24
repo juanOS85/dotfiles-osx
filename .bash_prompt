@@ -1,8 +1,6 @@
 # @gf3â€™s Sexy Bash Prompt, inspired by â€œExtravagant Zsh Promptâ€
 # Shamelessly copied from https://github.com/gf3/dotfiles
 
-default_username='juanobando'
-
 if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
   export TERM=gnome-256color
 elif infocmp xterm-256color >/dev/null 2>&1; then
@@ -35,7 +33,6 @@ else
   BOLD=""
   RESET="\033[m"
 fi
-
 
 function git_info() {
   # check if we're in a git repo
