@@ -1,0 +1,11 @@
+[user]
+  name = Juan Obando
+  email = juanchopx2@gmail.com
+[core]
+  # global gitignore file
+  excludesfile = ~/.gitignore
+[color]
+  ui = always
+[push]
+  # push/pull changes to the current branch
+  default = simple
