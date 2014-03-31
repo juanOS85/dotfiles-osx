@@ -2,3 +2,5 @@
 
 # Always use color output for `ls`
 alias ls="ls -FG"
+
+alias md="mkdir -p"
