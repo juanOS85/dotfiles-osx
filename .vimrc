@@ -11,9 +11,11 @@ set hlsearch " Highlight searches.
 set mouse=a " Enable moouse in all in all modes.
 set nu " Enable line numbers.
 set ruler " Show the cursor position.
+set shiftwidth=2 " The # of spaces for indenting.
 set showmode " Show the current mode.
 set showtabline=2 " Always show tab bar.
 set smarttab " At start of line, <Tab> inserts shiftwidth spaces, <Bs> deletes shiftwidth spaces.
+set softtabstop=2 " Tab key results in 2 spaces
 set title " Show the filename in the window titlebar.
 set ttyfast " Send more characters at a given time.
 set ttymouse=xterm " Set mouse type to xterm.
