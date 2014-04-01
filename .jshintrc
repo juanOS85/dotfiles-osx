@@ -1,0 +1,11 @@
+// JSHint options: http://www.jshint.com/docs/options/
+
+// TO-DO: group options in a meaningful way
+{
+  "camelcase": true,
+  "curly": true,
+  "eqeqeq": true,
+  "noempty": true,
+  "strict": false,
+  "undef": true
+}
