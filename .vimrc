@@ -2,8 +2,10 @@
 set t_Co=256 " Enable 256 colors
 set background=dark
 syntax on
+colorscheme badwolf
 
 set autoindent " Copy indent from last line when starting new line.
+set backspace=indent,eol,start
 set cursorline " Highlight current line.
 set expandtab " Expand tabs to spaces.
 set history=1000 " Increase history from 20 default to 1000.
@@ -23,4 +25,4 @@ set visualbell " Use visual bell instead of audible bell (annnnnoying)
 set wildchar=<TAB> " Character for CLI expansion (TAB-completion).
 set wildmenu " Hitting TAB in command mode will show possible completions above command line.
 
-let g:Powerline_symbols = 'fancy'
+" let g:Powerline_symbols = 'fancy'
