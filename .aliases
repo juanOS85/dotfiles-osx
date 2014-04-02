@@ -1,6 +1,15 @@
 # Better file list visuatlization
-
 # Always use color output for `ls`
 alias ls="ls -FG"
 
+# Folder management
 alias md="mkdir -p"
+alias rd="rm -rf"
+
+# `cat` with beautiful colors. requires Pygments installed.
+# [sudo] pip install Pygments
+alias c='pygmentize -O style=monokai -f console256 -g'
+
+# Programs
+# To avoid create symbolic link on */bin folders
+alias subl='open -a "Sublime Text"'
