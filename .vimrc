@@ -1,3 +1,6 @@
+" Make vim more useful
+set nocompatible
+
 " Syntax highlighting options
 set t_Co=256 " Enable 256 colors
 set background=dark
@@ -9,8 +12,11 @@ set backspace=indent,eol,start
 set cursorline " Highlight current line.
 set expandtab " Expand tabs to spaces.
 set history=1000 " Increase history from 20 default to 1000.
-set hlsearch " Highlight searches.
+set hlsearch " Highlight searches
+set ignorecase " Ignore case of searches.
+set incsearch " Highlight dynamically as pattern is typed.
 set mouse=a " Enable moouse in all in all modes.
+set nostartofline " Don't reset cursor to start of line when moving around.
 set nu " Enable line numbers.
 set ruler " Show the cursor position.
 set shiftwidth=2 " The # of spaces for indenting.
@@ -25,4 +31,4 @@ set visualbell " Use visual bell instead of audible bell (annnnnoying)
 set wildchar=<TAB> " Character for CLI expansion (TAB-completion).
 set wildmenu " Hitting TAB in command mode will show possible completions above command line.
 
-" let g:Powerline_symbols = 'fancy'
+let g:Powerline_symbols = 'fancy'
