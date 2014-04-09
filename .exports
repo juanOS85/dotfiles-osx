@@ -6,7 +6,19 @@ export LANG="en_US"
 export HISTFILESIZE=10000
 export HISTSIZE=10000
 
+# Display timestamp along with the command
+export HISTTIMEFORMAT="%F %T "
+
+# Ignore specific commands from the history
+export HISTIGNORE="pwd:ls:ls *:exit:date:man *:history"
+
 # Set ENV variables
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export NVM_DIR=$HOME/.nvm
+
+# Make Vim the default editor
+export EDITOR="vim"
+
+# Use Vim as MANPAGER
+export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
