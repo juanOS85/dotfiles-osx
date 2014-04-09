@@ -20,5 +20,5 @@ export NVM_DIR=$HOME/.nvm
 # Make Vim the default editor
 export EDITOR="vim"
 
-# Use Vim as MANPAGER
+# Use Vim as MANPAGER.  Credits: http://zameermanji.com/blog/2012/12/30/using-vim-as-manpager/
 export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
