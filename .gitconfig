@@ -1,11 +1,11 @@
 [user]
   name = Juan Obando
-  email = juanchopx2@gmail.com
 [alias]
   ci = commit
   di = diff
-  st = status
+  st = status -s
   up = pull
+  l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [core]
   # global gitignore file
   excludesfile = ~/.gitignore
