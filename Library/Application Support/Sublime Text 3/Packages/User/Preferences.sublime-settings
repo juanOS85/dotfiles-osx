@@ -1,0 +1,19 @@
+{
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "monaco",
+	"font_size": 12,
+	"gpu_window_buffer": true,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Pretty JSON",
+		"Vintage"
+	],
+	"margin": 2,
+	"open_files_in_new_window": false,
+	"tab_size": 2,
+	"theme": "Soda Dark 3.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true
+}
