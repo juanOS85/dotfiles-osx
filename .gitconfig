@@ -1,6 +1,7 @@
 [user]
   name = Juan Obando
 [alias]
+  co = checkout
   ci = commit
   di = diff
   st = status -s
@@ -15,4 +16,4 @@
   log = true
 [push]
   # push/pull changes to the current branch
-  default = simple
+  default = current
