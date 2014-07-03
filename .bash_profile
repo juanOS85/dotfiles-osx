@@ -7,6 +7,9 @@
 # Prompt
 [[ -r "$HOME/.bash_prompt" ]] && source "$HOME/.bash_prompt"
 
+# Init z (https://github.com/rupa/z)
+[[ -r "$HOME/Dev/code/z/z.sh" ]] && source "$HOME/Dev/code/z/z.sh"
+
 # Init RVM
 [[ -r "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
