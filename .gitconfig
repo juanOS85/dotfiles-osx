@@ -12,6 +12,15 @@
   excludesfile = ~/.gitignore
 [color]
   ui = always
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = green
+  changed = yellow
+  untracked = red
 [merge]
   log = true
 [push]
