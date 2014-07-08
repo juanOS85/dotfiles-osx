@@ -7,8 +7,8 @@
   st = status -s
   up = pull
   l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  kdiff = difftool -y -t Kaleidoscope # Use Kaleidoscope app as diff tool
-  kmerge = mergetool -y -t Kaleidoscope # Use Kaleidoscope app as diff tool
+  kdiff = difftool -y -t Kaleidoscope
+  kmerge = mergetool -y -t Kaleidoscope
 [core]
   # global gitignore file
   excludesfile = ~/.gitignore
