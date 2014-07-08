@@ -7,6 +7,8 @@
   st = status -s
   up = pull
   l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  kdiff = difftool -y -t Kaleidoscope # Use Kaleidoscope app as diff tool
+  kmerge = mergetool -y -t Kaleidoscope # Use Kaleidoscope app as diff tool
 [core]
   # global gitignore file
   excludesfile = ~/.gitignore
@@ -26,3 +28,9 @@
 [push]
   # push/pull changes to the current branch
   default = current
+# Set Kaleidoscope app as a optional diff and merge tool
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustexitcode = true
