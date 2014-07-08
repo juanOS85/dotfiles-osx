@@ -1,33 +1,51 @@
 [user]
   name = Juan Obando
+  email = juanchopx2@gmail.com
 [alias]
+  # add
+  aa = add .
+  au = add -u
+
+  # checkout
   co = checkout
-  ci = commit
+  cb = checkout -b
+
+  # diff
   di = diff
+  kdi = difftool -y -t Kaleidoscope
+
+  ci = commit
   st = status -s
   up = pull
   l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  kdiff = difftool -y -t Kaleidoscope
-  kmerge = mergetool -y -t Kaleidoscope
+  kmg = mergetool -y -t Kaleidoscope
+
 [core]
   # global gitignore file
   excludesfile = ~/.gitignore
+  editor = subl
+
 [color]
   ui = always
+
 [color "diff"]
   meta = yellow bold
   frag = magenta bold
   old = red bold
   new = green bold
+
 [color "status"]
   added = green
   changed = yellow
   untracked = red
+
 [merge]
   log = true
+
 [push]
   # push/pull changes to the current branch
   default = current
+
 # Set Kaleidoscope app as a optional diff and merge tool
 [difftool "Kaleidoscope"]
   cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
