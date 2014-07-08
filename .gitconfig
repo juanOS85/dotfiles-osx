@@ -9,16 +9,31 @@
   # checkout
   co = checkout
   cb = checkout -b
+  cf = checkout --
 
   # diff
   di = diff
   kdi = difftool -y -t Kaleidoscope
 
-  ci = commit
+  # commit
+  ci = commit -m
+
+  # status
   st = status -s
+
+  # pull
   up = pull
+
+  # log
   l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  lf = log -u
+
+  # merge
   kmg = mergetool -y -t Kaleidoscope
+
+  # reset
+  unstg = reset HEAD
+  unci = reset --soft HEAD^
 
 [core]
   # global gitignore file
@@ -46,9 +61,11 @@
   # push/pull changes to the current branch
   default = current
 
-# Set Kaleidoscope app as a optional diff and merge tool
+# Set Kaleidoscope app as a optional diff tool
 [difftool "Kaleidoscope"]
   cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
+# Set Kaleidoscope app as a optional merge tool
 [mergetool "Kaleidoscope"]
   cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
   trustexitcode = true
