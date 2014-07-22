@@ -5,7 +5,7 @@ cd "$(dirname "$0")"
 git pull
 
 function doIt() {
-  rsync --exclude ".git/" --exclude ".DS_Store" --exclude "sync.sh" --exclude "README.md" -av . ~
+  rsync --exclude "init.sh"  --exclude ".git/" --exclude ".DS_Store" --exclude "sync.sh" --exclude "README.md" -av . ~
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then # override changes without warning
