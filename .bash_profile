@@ -18,11 +18,9 @@
 [[ -r "$NVM_DIR/bash_completion" ]] && source "$NVM_DIR/bash_completion"
 
 # Init brew bash_completion scripts installed
-for bash_completion in /usr/local/etc/bash_completion.d/*; do
-  if [[ -r $bash_completion ]]; then
-    source $bash_completion
-  fi
-done
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh

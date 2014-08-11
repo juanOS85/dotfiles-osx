@@ -1,20 +1,28 @@
-# Script to run just one time, after homebrew installation (http://brew.sh/)
+### Script to run just one time, after homebrew installation (http://brew.sh/)
 
 # Homebrew taps for needed dependencies
 brew tap homebrew/dupes
 brew tap homebrew/versions
 brew tap homebrew/homebrew-php
 
+brew tap --repair
+
+brew update
+
 # General dependencies
 brew install pkg-config
 brew install makedepend
+
 brew install openssl
+brew link --force openssl
+
 brew install libmetalink
-brew insatll libssh2
-brew insatll libidn
+brew install libssh2
+brew install libidn
 brew install readline
 brew install icu4c
 brew install pcre
+brew install xz
 brew install gettext
 brew install autoconf
 brew install automake
@@ -25,21 +33,35 @@ brew install swig
 brew install cmake
 brew install ossp-uuid
 brew install tcl-tk --enable-threads
+brew install ssh-copy-id
+brew install c-ares
 
-brew install curl --with-libmetalink --with-openssl --with-ssh
+brew install bash
+brew install bash-completion
 
-brew install sqlite --with-functions --with-icu4c
+brew install curl --with-ares --with-idn --with-libmetalink --with-openssl --with-ssh
 
-brew install python
+brew install go
 
-brew install git --with-brewed-curl --with-brewed-openssl --with-gettext --with-pcre
+### Utilities
+
+# Vim optional dependecy
+brew install lua --with-completion
 
 brew install wget --enable-iri
 
-brew install mariadb
+### Development
 
-#brew install postgres --enable-dtrace --with-python
-brew install postgres --enable-dtrace --with-python --no-tcl
+# DBMS
+brew install mariadb
+brew install sqlite --with-functions --with-icu4c
+
+brew install python --with-brewed-tk
+
+brew install postgres --enable-dtrace --with-python
+
+#brew install git --with-blk-sha1 --with-brewed-openssl --with-brewed-curl --with-gettext --with-pcre --with-persistent-https
+brew install git --with-blk-sha1 --with-gettext --with-pcre --with-persistent-https
 
 # PHP dependencies
 brew install libpng
@@ -54,6 +76,30 @@ brew install tidy
 brew install re2c
 brew install flex
 
+###### Failing in Yosemite DP5 ###########
 brew install php55 --with-gmp --with-homebrew-curl --with-homebrew-openssl --with-pgsql --with-phpdbg --with-tidy
 
-git clone git@github.com:rupa/z.git ~/Dev/code/z
+#brew install android
+
+### third-party repos
+
+# Quick access to most used directories
+if [ ! -d ~/Dev/code/z ]; then
+  git clone git@github.com:rupa/z.git ~/Dev/code/z
+fi
+
+# NVM: To install and handle several NodeJS versions
+if [ ! -d ~/.nvm ]; then
+  git clone git@github.com:creationix/nvm.git ~/.nvm
+fi
+
+# RVM: To install and handle several Ruby versions
+if [ ! -d ~/.rvm ]; then
+    curl -sSL https://get.rvm.io | bash -s stable
+fi
+# I load RVM from .bash_profile file; .profile and .zshrc files can be deleted
+rm -f ~/.profile ~/.zshrc
+
+# after install Ruby
+#brew install vim --with-lua --with-python3
+brew install vim --with-lua
