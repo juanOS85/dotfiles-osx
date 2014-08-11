@@ -100,6 +100,13 @@ fi
 # I load RVM from .bash_profile file; .profile and .zshrc files can be deleted
 rm -f ~/.profile ~/.zshrc
 
+# Depdencies to complile Ruby
+brew install ncurses
+brew install libffi
+brew install glib
+brew install mono
+brew install libyaml
+
 # after install Ruby
 #brew install vim --with-lua --with-python3
 brew install vim --with-lua
