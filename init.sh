@@ -50,18 +50,17 @@ brew install lua --with-completion
 
 brew install wget --enable-iri
 
-### Development
-
-# DBMS
-brew install mariadb
-brew install sqlite --with-functions --with-icu4c
-
 brew install python --with-brewed-tk
 
+### Development
+brew install mariadb
+brew install sqlite --with-functions --with-icu4c
 brew install postgres --enable-dtrace --with-python
 
-#brew install git --with-blk-sha1 --with-brewed-openssl --with-brewed-curl --with-gettext --with-pcre --with-persistent-https
-brew install git --with-blk-sha1 --with-gettext --with-pcre --with-persistent-https
+# VCS
+brew install subversion --with-python
+#brew install git --with-blk-sha1 --with-brewed-curl --with-brewed-openssl --with-brewed-svn --with-gettext --with-pcre --with-persistent-https
+brew install git --with-blk-sha1 --with-brewed-svn --with-gettext --with-pcre --with-persistent-https
 
 # PHP dependencies
 brew install libpng
@@ -94,18 +93,24 @@ if [ ! -d ~/.nvm ]; then
 fi
 
 # RVM: To install and handle several Ruby versions
+# Depdencies for RVM and to complile Ruby
+brew install grep
+brew install ncurses
+brew install libffi
+brew install glib
+brew install mono
+brew install libyaml
+#brew install gcc46
+brew install libgpg-error
+brew install libksba
+
 if [ ! -d ~/.rvm ]; then
     curl -sSL https://get.rvm.io | bash -s stable
 fi
 # I load RVM from .bash_profile file; .profile and .zshrc files can be deleted
 rm -f ~/.profile ~/.zshrc
 
-# Depdencies to complile Ruby
-brew install ncurses
-brew install libffi
-brew install glib
-brew install mono
-brew install libyaml
+# rvm install 2.1-head --with-readline-dir
 
 # after install Ruby
 #brew install vim --with-lua --with-python3
