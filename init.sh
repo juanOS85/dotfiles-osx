@@ -80,6 +80,13 @@ brew install php55 --with-gmp --with-homebrew-curl --with-homebrew-openssl --wit
 
 #brew install android
 
+#NginX
+# for install it with Fushion Passenger support
+brew install passenger
+
+brew install nginx --with-debug --with-gunzip --with-passenger --with-spdy
+
+
 ### third-party repos
 
 # Quick access to most used directories
