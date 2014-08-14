@@ -76,7 +76,7 @@ brew install re2c
 brew install flex
 
 ###### Failing in Yosemite DP5 ###########
-brew install php55 --with-gmp --with-homebrew-curl --with-homebrew-openssl --with-pgsql --with-phpdbg --with-tidy
+brew install php55 --with-gmp --with-homebrew-curl --with-homebrew-libxslt --with-homebrew-openssl --with-pgsql --with-phpdbg --with-tidy
 
 #brew install android
 
