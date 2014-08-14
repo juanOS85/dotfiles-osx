@@ -117,8 +117,10 @@ fi
 # I load RVM from .bash_profile file; .profile and .zshrc files can be deleted
 rm -f ~/.profile ~/.zshrc
 
-# rvm install 2.1-head --with-readline-dir
+# rvm install 2.1-head
 
 # after install Ruby
 #brew install vim --with-lua --with-python3
 brew install vim --with-lua
+
+brew install heroku-toolbelt
