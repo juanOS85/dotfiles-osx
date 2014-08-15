@@ -36,8 +36,7 @@ brew install tcl-tk --enable-threads
 brew install ssh-copy-id
 brew install c-ares
 
-brew install bash
-brew install bash-completion
+brew install zsh
 
 brew install curl --with-ares --with-idn --with-libmetalink --with-openssl --with-ssh
 
