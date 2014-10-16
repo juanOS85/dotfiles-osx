@@ -74,10 +74,9 @@ brew install tidy
 brew install re2c
 brew install flex
 
-###### Failing in Yosemite DP5 ###########
-brew install php55 --with-gmp --with-homebrew-curl --with-homebrew-libxslt --with-homebrew-openssl --with-pgsql --with-phpdbg --with-tidy
-
-#brew install android
+###### Failing in Yosemite GM Candidate 1 ###########
+#brew install php56 --with-gmp --with-homebrew-curl --with-homebrew-libxslt --with-homebrew-openssl --with-pgsql --with-phpdbg --with-tidy --without-snmp
+brew install php56 --with-gmp --with-homebrew-libxslt --with-homebrew-openssl --with-pgsql --with-tidy --without-snmp
 
 #NginX
 # for install it with Fushion Passenger support
@@ -85,18 +84,7 @@ brew install passenger
 
 brew install nginx --with-debug --with-gunzip --with-passenger --with-spdy
 
-
 ### third-party repos
-
-# Quick access to most used directories
-if [ ! -d ~/Dev/code/z ]; then
-  git clone git@github.com:rupa/z.git ~/Dev/code/z
-fi
-
-# NVM: To install and handle several NodeJS versions
-if [ ! -d ~/.nvm ]; then
-  git clone git@github.com:creationix/nvm.git ~/.nvm
-fi
 
 # RVM: To install and handle several Ruby versions
 # Depdencies for RVM and to complile Ruby
@@ -113,8 +101,8 @@ brew install libksba
 if [ ! -d ~/.rvm ]; then
     curl -sSL https://get.rvm.io | bash -s stable
 fi
-# I load RVM from .bash_profile file; .profile and .zshrc files can be deleted
-rm -f ~/.profile ~/.zshrc
+# I load RVM from .zshrc file; .profile and .bash_profile files can be deleted
+rm -f ~/.profile ~/.bash_profile
 
 # rvm install 2.1-head
 
