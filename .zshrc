@@ -19,7 +19,7 @@ ZSH_THEME="juanchopx2"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-export UPDATE_ZSH_DAYS=1
+export UPDATE_ZSH_DAYS=7
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -50,7 +50,7 @@ export UPDATE_ZSH_DAYS=1
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git nvm)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -68,8 +68,11 @@ source $ZSH/oh-my-zsh.sh
 #Load alises
 [[ -r "$HOME/.aliases" ]] && source "$HOME/.aliases"
 
+# NVM
+[[ -r "$DOTFILES/code/nvm/nvm.sh" ]] && source "$DOTFILES/code/nvm/nvm.sh"
+
 # Init z (https://github.com/rupa/z)
-[[ -r "$HOME/Dev/code/z/z.sh" ]] && source "$DOTFILES/code/z/z.sh"
+[[ -r "$DOTFILES/code/z/z.sh" ]] && source "$DOTFILES/code/z/z.sh"
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 #[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
