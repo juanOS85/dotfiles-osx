@@ -18,11 +18,10 @@ local current_dir='${PWD/#$HOME/~}'
 local git_info='$(git_prompt_info)'
 local prompt_char='$'
 
-PROMPT="%{$terminfo[bold]$FG[040]%}%n%{$reset_color%} %{$FG[246]%}at%{$reset_color%} %{$terminfo[bold]$FG[033]%}$(box_name)%{$reset_color%} %{$FG[246]%}in%{$reset_color%} %{$terminfo[bold]$FG[226]%}${current_dir}%{$reset_color%}${git_info} %{$FG[246]%}using%{$FG[124]%}${ruby_env}%{$reset_color%}
+PROMPT="%{$terminfo[bold]$FG[040]%}%n%{$reset_color%} %{$FG[246]%}at%{$reset_color%} %{$terminfo[bold]$FG[033]%}$(box_name)%{$reset_color%} %{$FG[246]%}in%{$reset_color%} %{$terminfo[bold]$FG[226]%}${current_dir}%{$reset_color%}${git_info} %{$FG[246]%}using%{$terminfo[bold]$FG[124]%}${ruby_env}%{$reset_color%}
 ${prompt_char} "
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" (%{$fg[255]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%})"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$FG[124]%}*"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
-

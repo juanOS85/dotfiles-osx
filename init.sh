@@ -36,6 +36,7 @@ brew install tcl-tk --enable-threads
 brew install ssh-copy-id
 brew install c-ares
 
+brew install bash
 brew install zsh
 
 brew install curl --with-ares --with-idn --with-libmetalink --with-openssl --with-ssh
@@ -74,7 +75,6 @@ brew install tidy
 brew install re2c
 brew install flex
 
-###### Failing in Yosemite GM Candidate 1 ###########
 #brew install php56 --with-gmp --with-homebrew-curl --with-homebrew-libxslt --with-homebrew-openssl --with-pgsql --with-phpdbg --with-tidy --without-snmp
 brew install php56 --with-gmp --with-homebrew-libxslt --with-homebrew-openssl --with-pgsql --with-tidy --without-snmp
 

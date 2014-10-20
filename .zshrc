@@ -1,5 +1,10 @@
+export DOTFILES=$HOME/Dev/dotfiles-osx
+
+# RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/Dev/code/oh-my-zsh
+export ZSH=$DOTFILES/code/oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -63,7 +68,8 @@ source $ZSH/oh-my-zsh.sh
 #Load alises
 [[ -r "$HOME/.aliases" ]] && source "$HOME/.aliases"
 
-[[ -r "$HOME/.rvm" ]] && source "$HOME/.rvm/scripts/zsh/Completion/_rvm"
+# Init z (https://github.com/rupa/z)
+[[ -r "$HOME/Dev/code/z/z.sh" ]] && source "$DOTFILES/code/z/z.sh"
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 #[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
