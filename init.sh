@@ -75,10 +75,11 @@ brew install tidy
 brew install re2c
 brew install flex
 
+# PHP
 #brew install php56 --with-gmp --with-homebrew-curl --with-homebrew-libxslt --with-homebrew-openssl --with-pgsql --with-phpdbg --with-tidy --without-snmp
 brew install php56 --with-gmp --with-homebrew-libxslt --with-homebrew-openssl --with-pgsql --with-tidy --without-snmp
 
-#NginX
+# NginX
 # for install it with Fushion Passenger support
 brew install passenger
 
@@ -101,8 +102,6 @@ brew install libksba
 if [ ! -d ~/.rvm ]; then
     curl -sSL https://get.rvm.io | bash -s stable
 fi
-# I load RVM from .zshrc file; .profile and .bash_profile files can be deleted
-rm -f ~/.profile ~/.bash_profile
 
 # rvm install 2.1-head
 
@@ -111,3 +110,10 @@ rm -f ~/.profile ~/.bash_profile
 brew install vim --with-lua
 
 brew install heroku-toolbelt
+
+# Set ZSH as default shell
+chsh -s /bin/zsh
+
+# Remove any .bash* file
+rm -f .bash_* .bashrc .profile
+
