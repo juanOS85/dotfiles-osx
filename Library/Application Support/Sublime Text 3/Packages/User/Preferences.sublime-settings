@@ -1,4 +1,6 @@
 {
+  // For GutterColor package
+  "convert_path": "/usr/local/bin/convert",
   "draw_white_space": "all",
   "ensure_newline_at_eof_on_save": true,
   "fallback_encoding": "UTF-8",

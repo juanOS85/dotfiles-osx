@@ -32,6 +32,7 @@ brew install ossp-uuid
 brew install tcl-tk --enable-threads
 brew install ssh-copy-id
 brew install c-ares
+brew install imagemagick
 
 brew install bash
 brew install zsh
