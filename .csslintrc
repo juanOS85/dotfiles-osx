@@ -1,0 +1,9 @@
+{
+  "empty-rules": false, // Remove empty rules
+  "duplicate-properties": false, // Avoid duplicate properties
+  "font-faces": false, // Don't use too many web fonts
+  "font-sizes": false,
+  "import": false, // Don't use @import
+  "important": false, // Don't use !important
+  "zero-units": false
+}

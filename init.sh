@@ -32,6 +32,9 @@ brew install ossp-uuid
 brew install tcl-tk --enable-threads
 brew install ssh-copy-id
 brew install c-ares
+brew install libpng
+brew install freetype
+brew install jpeg
 brew install imagemagick
 
 brew install bash
@@ -57,9 +60,6 @@ brew install postgres --enable-dtrace --with-python
 brew install python --with-brewed-tk
 
 # PHP dependencies
-brew install libpng
-brew install freetype
-brew install jpeg
 brew install unixodbc
 brew install zlib
 brew install gmp
