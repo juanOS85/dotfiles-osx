@@ -2,10 +2,20 @@
 
 // TO-DO: group options in a meaningful way
 {
+  // Enforcing
   "camelcase": true,
   "curly": true,
   "eqeqeq": true,
-  "noempty": true,
-  "strict": false,
-  "undef": true
+  "forin": true,
+  "immed": true,
+  "indent": 2,
+  "latedef": true,
+  "plusplus": true,
+  "undef": true,
+  "unused": true,
+  "strict": true,
+  "maxlen": 80,
+
+  // Relaxing
+  "es5": true
 }
