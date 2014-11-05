@@ -1,5 +1,3 @@
-export DOTFILES=$HOME/Dev/dotfiles-osx
-
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
@@ -67,9 +65,6 @@ source $ZSH/oh-my-zsh.sh
 
 #Load alises
 [[ -r "$HOME/.aliases" ]] && source "$HOME/.aliases"
-
-# NVM
-[[ -r "$DOTFILES/code/nvm/nvm.sh" ]] && source "$DOTFILES/code/nvm/nvm.sh"
 
 # Init z (https://github.com/rupa/z)
 [[ -r "$DOTFILES/code/z/z.sh" ]] && source "$DOTFILES/code/z/z.sh"
