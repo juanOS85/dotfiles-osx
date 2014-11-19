@@ -14,7 +14,7 @@
   "undef": true,
   "unused": true,
   "strict": true,
-  "maxlen": 80,
+  "maxlen": 120,
 
   // Relaxing
   "es5": true
