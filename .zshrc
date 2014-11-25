@@ -60,11 +60,10 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-# Set ENV variables
-[[ -r "$HOME/.exports" ]] && source "$HOME/.exports"
-
-#Load alises
-[[ -r "$HOME/.aliases" ]] && source "$HOME/.aliases"
+for dotfile in $HOME/.{exports,aliases,functions}; do
+  [ -r "$dotfile" ] && source "$dotfile"
+done
+unset dotfile
 
 # Init z (https://github.com/rupa/z)
 [[ -r "$DOTFILES/code/z/z.sh" ]] && source "$DOTFILES/code/z/z.sh"
