@@ -12,3 +12,6 @@ sudo chflags uchg /Private/var/vm/sleepimage
 
 # Turn off Sudden Motion Sensor
 sudo pmset -a sms 0
+
+# Expand save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
