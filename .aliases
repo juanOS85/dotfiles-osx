@@ -13,3 +13,6 @@ alias c='pygmentize -O style=monokai -f console256 -g'
 # Programs
 # To avoid create symbolic link on */bin folders
 alias subl='open -a "Sublime Text"'
+
+# Homebrew: update formulas, upgrade them and clean all
+alias brew-up='brew update -v && brew upgrade -v && brew cleanup -s'
