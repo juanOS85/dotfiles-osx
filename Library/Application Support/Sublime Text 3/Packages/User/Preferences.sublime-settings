@@ -7,9 +7,6 @@
   "fallback_encoding": "UTF-8",
   "font_face": "Source Code Pro",
   "font_size": 12,
-  "font_options": [
-    "gray_antialias"
-  ],
   "gpu_window_buffer": true,
   "highlight_line": true,
   "ignored_packages":
