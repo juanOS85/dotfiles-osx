@@ -1,6 +1,7 @@
 [user]
   name = Juan Obando
   email = juanchopx2@gmail.com
+
 [alias]
   # add
   aa = add .
@@ -58,7 +59,11 @@
   log = true
 
 [push]
-  # push/pull changes to the current branch
+  # push changes from the current branch
+  default = current
+
+[pull]
+  # pull changes to the current branch
   default = current
 
 # Set Kaleidoscope app as a optional diff tool
