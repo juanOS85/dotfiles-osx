@@ -1,7 +1,7 @@
 {
   "auto_complete_delay": 30,
   "caret_extra_width": 2,
-  "color_scheme": "Packages/User/Seti (SL).tmTheme",
+  "color_scheme": "Packages/Seti_UI/Scheme/Seti.tmTheme",
   "draw_white_space": "all",
   "ensure_newline_at_eof_on_save": true,
   "fallback_encoding": "UTF-8",

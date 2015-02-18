@@ -36,13 +36,22 @@ brew install libpng
 brew install freetype
 brew install jpeg
 brew install imagemagick
+brew install rtmpdump
+brew install gpg
+brew install libgpg-error
+brew install libgcrypt
+brew install libksba
+brew install libassuan
+brew install pth
+brew install pinentry
+brew install gpg-agent
 
 brew install bash
 brew install zsh
 
-brew install curl --with-ares --with-idn --with-libmetalink --with-openssl --with-ssh
+brew install curl --with-c-ares --with-libidn --with-libmetalink --with-openssl --with-libssh2 --with-rtmpdump
 
-brew install go
+brew install go --with-cc-all
 
 ### Utilities
 
@@ -52,9 +61,9 @@ brew install lua --with-completion
 brew install wget --with-iri
 
 ### Development
-brew install mariadb
+brew install mariadb --with-archive-storage-engine --with-bench
 brew install sqlite --with-functions --with-icu4c
-brew install postgres --enable-dtrace --with-python
+brew install postgres --with-dtrace
 
 # Python
 brew install python --with-brewed-tk
@@ -75,10 +84,9 @@ brew install flex
 brew install php56 --with-gmp --with-homebrew-libxslt --with-homebrew-openssl --with-pgsql --with-tidy --without-snmp
 
 # VCS
-# Failing in Yosemite
-brew install subversion --with-python
-#brew install git --with-blk-sha1 --with-brewed-curl --with-brewed-openssl --with-brewed-svn --with-gettext --with-pcre --with-persistent-https
-brew install git --with-blk-sha1 --with-gettext --with-pcre --with-persistent-https
+brew install subversion --with-gpg-agent --with-python
+brew install git --with-blk-sha1 --with-brewed-curl --with-brewed-openssl --with-brewed-svn --with-gettext --with-pcre --with-persistent-https
+# brew install git --with-blk-sha1 --with-gettext --with-pcre --with-persistent-https
 
 # NginX
 # for install it with Fushion Passenger support
@@ -96,24 +104,19 @@ brew install libffi
 brew install glib
 brew install mono
 brew install libyaml
-#brew install gcc46
-brew install libgpg-error
-brew install libksba
 
+# Check if RVM isn't install already
 if [ ! -d ~/.rvm ]; then
     curl -sSL https://get.rvm.io | bash -s stable
 fi
 
-# rvm install 2.1-head
-
-# after install Ruby
-#brew install vim --with-lua --with-python3
+# after install a Ruby version
 brew install vim --with-lua
 
 brew install heroku-toolbelt
 
 # Set ZSH as default shell
-chsh -s /bin/zsh
+#chsh -s /bin/zsh
 
 # Remove any .bash* file
 rm -f .bash_* .bashrc .profile
