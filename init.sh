@@ -107,17 +107,20 @@ brew install libyaml
 
 # Check if RVM isn't install already
 if [ ! -d ~/.rvm ]; then
+    gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
     curl -sSL https://get.rvm.io | bash -s stable
 fi
 
+# After RVM is install
+rvm autolibs homebrew
+
 # after install a Ruby version
-brew install vim --with-lua
+brew install vim --with-lua --with-tcl
 
 brew install heroku-toolbelt
 
 # Set ZSH as default shell
-#chsh -s /bin/zsh
+chsh -s /bin/zsh
 
 # Remove any .bash* file
 rm -f .bash_* .bashrc .profile
-
