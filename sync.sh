@@ -6,6 +6,9 @@ git pull
 
 function doIt() {
   rsync --exclude "osx.sh" --exclude ".gitmodules" --exclude "code" --exclude "juanchopx2.zsh-theme" --exclude "init.sh" --exclude ".git/" --exclude ".DS_Store" --exclude "sync.sh" --exclude "README.md" -av . ~
+
+  # Copy Fonts to user's fonts folder
+  sh code/fonts/install.sh
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then # override changes without warning

@@ -7,3 +7,6 @@
 [submodule "code/nvm"]
 	path = code/nvm
 	url = git@github.com:creationix/nvm.git
+[submodule "code/fonts"]
+	path = code/fonts
+	url = git@github.com:powerline/fonts.git
