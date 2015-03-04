@@ -45,15 +45,15 @@
   ui = always
 
 [color "diff"]
-  meta = yellow bold
+  meta = 226 bold
   frag = magenta bold
-  old = red bold
-  new = green bold
+  old = 009 bold
+  new = 046 bold
 
 [color "status"]
-  added = green
-  changed = yellow
-  untracked = red
+  added = 046
+  changed = 226
+  untracked = 009
 
 [merge]
   log = true
