@@ -45,6 +45,7 @@ brew install libassuan
 brew install pth
 brew install pinentry
 brew install gpg-agent
+brew install aspell
 
 brew install bash
 brew install zsh
@@ -79,9 +80,11 @@ brew install re2c
 brew install flex
 
 # PHP
-#brew install php56 --with-gmp --with-homebrew-curl --with-homebrew-libxslt --with-homebrew-openssl --with-pgsql --with-phpdbg --with-tidy --without-snmp
-# Failing in Yosemite
-brew install php56 --with-gmp --with-homebrew-libxslt --with-homebrew-openssl --with-pgsql --with-tidy --without-snmp
+brew install php56 --with-gmp --with-homebrew-libxslt --with-homebrew-openssl --with-postgresql --with-tidy
+brew install php56-xdebug
+brew install php56-imagick
+brew install php56-pspell
+brew install php56-crypto
 
 # VCS
 brew install subversion --with-gpg-agent --with-python

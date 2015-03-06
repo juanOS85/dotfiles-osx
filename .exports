@@ -1,5 +1,5 @@
 # Set ENV variables
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 #export ANDROID_HOME=/usr/local/opt/android-sdk
 
