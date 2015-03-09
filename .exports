@@ -1,6 +1,9 @@
 # Set ENV variables
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
+# Default username
+export DEFAULT_USER=juanchopx2
+
 #export ANDROID_HOME=/usr/local/opt/android-sdk
 
 export NVM_DIR=$DOTFILES/code/nvm
