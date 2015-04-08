@@ -86,6 +86,9 @@ brew install php56-imagick
 brew install php56-pspell
 brew install php56-crypto
 
+# Composer: Dependency Manager for PHP
+brew install composer
+
 # VCS
 brew install subversion --with-gpg-agent --with-python
 brew install git --with-blk-sha1 --with-brewed-curl --with-brewed-openssl --with-brewed-svn --with-gettext --with-pcre --with-persistent-https
