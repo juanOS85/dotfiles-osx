@@ -1,12 +1,15 @@
 {
   "auto_complete_delay": 30,
-  "caret_extra_width": 2,
+  "caret_extra_width": 3,
+  "caret_extra_bottom": 3,
+  "caret_extra_top": 3,
   "color_scheme": "Packages/Seti_UI/Scheme/Seti.tmTheme",
   "draw_white_space": "all",
   "ensure_newline_at_eof_on_save": true,
   "fallback_encoding": "UTF-8",
   "font_face": "Source Code Pro for Powerline",
   "font_size": 12,
+  "overlay_scroll_bars": "enabled",
   "gpu_window_buffer": true,
   "highlight_line": true,
   "ignored_packages":
