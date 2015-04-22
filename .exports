@@ -32,3 +32,5 @@ export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu
 
 # grep: Always enable colored output, show line number
 export GREP_OPTIONS="--color=always"
+
+export XDEBUG_CONFIG="idekey=PHPSTORM"
