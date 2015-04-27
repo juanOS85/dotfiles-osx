@@ -15,4 +15,4 @@ alias c='pygmentize -O style=monokai -f console256 -g'
 alias subl='open -a "Sublime Text"'
 
 # Homebrew: update formulas, upgrade them and clean all
-alias brew-up='brew tap --repair && brew update -v && brew upgrade -v && brew cleanup -s'
+alias brew-up='brew tap --repair && brew update -v && brew upgrade -v --all && brew cleanup -s'
