@@ -8,15 +8,10 @@ fi
 # Update homebrew recipes
 brew update
 
-# extra repos
-taps=(
-  homebrew/dupes
-  homebrew/versions
-  homebrew/homebrew-php
-)
-
 echo "Installing extra repos..."
-brew tap ${taps[@]}
+brew tap homebrew/dupes
+brew tap homebrew/versions
+brew tap homebrew/homebrew-php
 
 # Update homebrew recipes with added taps
 brew update
@@ -26,6 +21,8 @@ binaries=(
   grep
   zsh
   curl
+  git
+  subverison
   go
   mariadb
   sqlite
@@ -56,6 +53,6 @@ fi
 
 rvm autolibs homebrew
 
-# chsh -s /bin/zsh
+chsh -s /bin/zsh
 
 rm -f .bash_* .bashrc .profile
