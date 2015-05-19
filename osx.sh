@@ -53,8 +53,8 @@ echo "Requiring password immediately after sleep or screen saver begins"
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-echo "Enabling subpixel font rendering on non-Apple LCDs"
-defaults write NSGlobalDomain AppleFontSmoothing -int 2
+# echo "Enabling subpixel font rendering on non-Apple LCDs"
+# defaults write NSGlobalDomain AppleFontSmoothing -int 2
 
 ################################################################################
 # Finder
