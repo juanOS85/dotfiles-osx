@@ -17,6 +17,7 @@ brew tap homebrew/homebrew-php
 brew update
 
 binaries=(
+  gpg
   bash
   grep
   zsh
