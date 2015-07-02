@@ -22,8 +22,7 @@ binaries=(
   grep
   zsh
   curl
-  git
-  subverison
+  git 
   go
   mariadb
   sqlite
