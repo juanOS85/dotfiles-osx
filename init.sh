@@ -5,43 +5,10 @@ if test ! $(which brew); then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-# Update homebrew recipes
-brew update
+# Install bundle command
+brew tap homebrew/bundle
 
-echo "Installing extra repos..."
-brew tap homebrew/dupes
-brew tap homebrew/versions
-brew tap homebrew/homebrew-php
-
-# Update homebrew recipes with added taps
-brew update
-
-binaries=(
-  gpg
-  bash
-  grep
-  zsh
-  curl
-  git 
-  go
-  mariadb
-  sqlite
-  postgres
-  python
-  php56
-  php56-xdebug
-  php56-imagick
-  php56-pspell
-  php56-crypto
-  composer
-  heroku-toolbelt
-  vim
-)
-
-echo "Installing binaries..."
-brew install ${binaries[@]}
-
-brew cleanup
+brew bundle
 
 # Check for RVM,
 # Install if we don't have it
