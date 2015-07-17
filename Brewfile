@@ -1,8 +1,6 @@
 tap "homebrew/dupes"
 tap "homebrew/versions"
 tap "homebrew/homebrew-php"
-tap "caskroom/cask"
-tap "caskroom/versions"
 
 brew "gpg"
 brew "bash"
@@ -22,4 +20,4 @@ brew "php56-pspell"
 brew "php56-crypto"
 brew "heroku-toolbelt"
 brew "vim"
-
+brew "highlight"
