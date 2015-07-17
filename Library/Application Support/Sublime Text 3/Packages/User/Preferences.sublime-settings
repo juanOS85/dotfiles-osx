@@ -1,23 +1,29 @@
 {
+  "always_show_minimap_viewport": true,
   "auto_complete_delay": 30,
-  "caret_extra_width": 2,
+  "bold_folder_labels": true,
   "caret_extra_bottom": 3,
   "caret_extra_top": 3,
-  "color_scheme": "Packages/Seti_UI/Scheme/Seti.tmTheme",
+  "caret_extra_width": 2,
+  "color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
   "draw_white_space": "all",
   "ensure_newline_at_eof_on_save": true,
   "fallback_encoding": "UTF-8",
   "font_face": "Source Code Pro for Powerline",
+  "font_options": [ "gray_antialias" ],
   "font_size": 12,
-  "overlay_scroll_bars": "enabled",
   "gpu_window_buffer": true,
   "highlight_line": true,
+  "indent_guide_options": [ "draw_normal", "draw_active" ],
   "ignored_packages":
   [
     "Vintage"
   ],
+  "line_padding_top": 1,
+  "line_padding_bottom": 1,
   "margin": 0,
   "open_files_in_new_window": false,
+  "overlay_scroll_bars": "enabled",
   "rulers":
   [
     80
@@ -25,7 +31,7 @@
   "show_encoding": true,
   "show_line_endings": true,
   "tab_size": 2,
-  "theme": "Seti.sublime-theme",
+  "theme": "Material-Theme-Darker.sublime-theme",
   "translate_tabs_to_spaces": true,
   "trim_trailing_white_space_on_save": true,
   "word_wrap": true
