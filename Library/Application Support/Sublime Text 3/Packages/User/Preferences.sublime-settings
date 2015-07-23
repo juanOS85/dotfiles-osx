@@ -22,6 +22,7 @@
   "line_padding_top": 1,
   "line_padding_bottom": 1,
   "margin": 0,
+  "material_theme_accent_red": true,
   "open_files_in_new_window": false,
   "overlay_scroll_bars": "enabled",
   "rulers":
