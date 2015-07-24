@@ -17,7 +17,9 @@
   kdi = difftool -y -t Kaleidoscope
 
   # commit
-  ci = commit -m
+  ci = commit
+  cia = commit --amend
+  cian = commit --amend --no-edit
 
   # status
   st = status -s
@@ -45,10 +47,10 @@
   ui = always
 
 [color "diff"]
-  meta = 226 bold
-  frag = magenta bold
-  old = 009 bold
-  new = 046 bold
+  meta = 226
+  frag = magenta
+  old = 009
+  new = 046
 
 [color "status"]
   added = 046
