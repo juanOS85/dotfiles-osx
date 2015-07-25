@@ -5,7 +5,7 @@ set nocompatible
 set t_Co=256 " Enable 256 colors
 set background=dark
 syntax on
-colorscheme badwolf
+colorscheme hybrid_reverse
 
 set autoindent " Copy indent from last line when starting new line.
 set backspace=indent,eol,start
@@ -32,3 +32,6 @@ set wildchar=<TAB> " Character for CLI expansion (TAB-completion).
 set wildmenu " Hitting TAB in command mode will show possible completions above command line.
 
 let g:Powerline_symbols = 'fancy'
+
+" bolded code, like functions and language controls
+let g:enable_bold_font = 1

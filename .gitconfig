@@ -18,6 +18,7 @@
 
   # commit
   ci = commit
+  cim = commit -m
   cia = commit --amend
   cian = commit --amend --no-edit
 
@@ -35,8 +36,8 @@
   kmg = mergetool -y -t Kaleidoscope
 
   # reset
-  unstg = reset HEAD
-  unci = reset --soft HEAD^
+  ustg = reset HEAD
+  uci = reset --soft HEAD^
 
 [core]
   # global gitignore file
