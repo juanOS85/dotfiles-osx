@@ -1,0 +1,33 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"ApacheConf.tmLanguage",
+		"AutoFileName",
+		"Autoprefixer",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"DocBlockr",
+		"Emmet",
+		"GitGutter",
+		"HTML-CSS-JS Prettify",
+		"HTML5",
+		"JavaScriptNext - ES6 Syntax",
+		"LESS",
+		"Material Theme",
+		"Package Control",
+		"ReactJS",
+		"Sass",
+		"Seti_UI",
+		"Seti_UX",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-csslint",
+		"SublimeLinter-jshint",
+		"SublimeLinter-jsxhint",
+		"Tag"
+	]
+}
