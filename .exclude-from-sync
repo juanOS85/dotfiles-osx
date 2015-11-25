@@ -1,0 +1,12 @@
+.exclude-from-sync
+Brewfile
+osx.sh
+.gitmodules
+code
+juanchopx2.zsh-theme
+init.sh
+.git
+.DS_Store
+sync.sh
+README.md
+
