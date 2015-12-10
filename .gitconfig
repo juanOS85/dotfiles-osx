@@ -3,41 +3,10 @@
   email = juanchopx2@gmail.com
 
 [alias]
-  # add
-  aa = add .
-  au = add -u
-
-  # checkout
-  co = checkout
-  cb = checkout -b
-  cf = checkout --
-
-  # diff
-  di = diff
   kdi = difftool -y -t Kaleidoscope
-
-  # commit
-  ci = commit
-  cim = commit -m
-  cia = commit --amend
-  cian = commit --amend --no-edit
-
-  # status
-  st = status -s
-
-  # pull
-  up = pull
-
-  # log
-  l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  lf = log -u
 
   # merge
   kmg = mergetool -y -t Kaleidoscope
-
-  # reset
-  ustg = reset HEAD
-  uci = reset --soft HEAD^
 
 [core]
   # global gitignore file
