@@ -14,12 +14,10 @@ export JAVA_HOME=`/usr/libexec/java_home`
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
-# Larger bash history (allow 32³ entries; default is 500)
-export HISTSIZE=32768
-export HISTFILESIZE=$HISTSIZE
-
-# Display timestamp along with the command
-export HISTTIMEFORMAT="%F %T "
+export HISTCONTROL=ignoredups:erasedups # no duplicate entries
+export HISTSIZE=100000 # big big history (default is 500)
+export HISTFILESIZE=$HISTSIZE # big big history
+export HISTTIMEFORMAT="%F %T " # Display timestamp along with the command
 
 # Ignore specific commands from the history
 export HISTIGNORE="pwd:ls:ls *:exit:date:man *:history"
@@ -27,8 +25,8 @@ export HISTIGNORE="pwd:ls:ls *:exit:date:man *:history"
 # Make Vim the default editor
 export EDITOR="vim"
 
-# Use Vim as MANPAGER.  Credits: http://zameermanji.com/blog/2012/12/30/using-vim-as-manpager/
-export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
+# Don’t clear the screen after quitting a manual page
+export MANPAGER="less -X"
 
 # grep: Always enable colored output, show line number
 export GREP_OPTIONS="--color=always"
