@@ -28,6 +28,9 @@ echo "Removing duplicates in the 'Open With' menu"
 echo "Disable the sudden motion sensor (it's not useful for SSDs/current MacBooks)"
 sudo pmset -a sms 0
 
+# Disable hibernation (speeds up entering sleep mode)
+sudo pmset -a hibernatemode 0
+
 echo "Speeding up wake from sleep to 24 hours from an hour"
 # http://www.cultofmac.com/221392/quick-hack-speeds-up-retina-macbooks-wake-from-sleep-os-x-tips/
 sudo pmset -a standbydelay 86400
