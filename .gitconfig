@@ -11,21 +11,28 @@
 [core]
   # global gitignore file
   excludesfile = ~/.gitignore
-  editor = vim
+  editor = vi
 
 [color]
   ui = always
-
-[color "diff"]
-  meta = 226
-  frag = magenta
-  old = 009
-  new = 046
 
 [color "status"]
   added = 046
   changed = 226
   untracked = 009
+
+# Beautiful diffs (https://github.com/blog/2188-git-2-9-has-been-released)
+[diff]
+  compactionHeuristic = 1
+
+# https://github.com/git/git/tree/master/contrib/diff-highlight
+[pager]
+  log = "`brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less"
+  show = "`brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less"
+  diff = "`brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less"
+
+[interactive]
+  diffFilter = "`brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less"
 
 [merge]
   log = true
