@@ -6,7 +6,7 @@ alias ls="ls -FG"
 alias md="mkdir -p"
 alias rd="rm -rf"
 
-# `cat` with beautiful colors. requires Pygments installed.
+# `cat` with beautiful colors. Requires Pygments installed.
 # [sudo] pip install Pygments
 alias c='pygmentize -O style=monokai -f console256 -g'
 

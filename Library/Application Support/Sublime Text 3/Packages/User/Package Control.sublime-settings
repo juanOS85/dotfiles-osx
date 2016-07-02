@@ -25,9 +25,7 @@
 		"Seti_UX",
 		"SideBarEnhancements",
 		"SublimeLinter",
-		"SublimeLinter-csslint",
-		"SublimeLinter-jshint",
-		"SublimeLinter-jsxhint",
+		"SublimeLinter-contrib-eslint",
 		"Tag"
 	]
 }
