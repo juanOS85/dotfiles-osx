@@ -21,4 +21,4 @@ fi
 
 chsh -s /bin/zsh
 
-rm -f .bash_* .bashrc .profile
+rm -f $HOME/.bash_* $HOME/.bashrc $HOME/.profile $HOME/.zcompdump; compinit

@@ -68,6 +68,9 @@ unset dotfile
 # Init z (https://github.com/rupa/z)
 [[ -r "$DOTFILES/code/z/z.sh" ]] && source "$DOTFILES/code/z/z.sh"
 
+# zsh-completions
+fpath=(/usr/local/share/zsh-completions $fpath)
+
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 #[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
 
