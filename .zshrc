@@ -66,7 +66,7 @@ done
 unset dotfile
 
 # Init z (https://github.com/rupa/z)
-[[ -r "$DOTFILES/code/z/z.sh" ]] && source "$DOTFILES/code/z/z.sh"
+source `brew --prefix`/etc/profile.d/z.sh
 
 # zsh-completions
 fpath=(/usr/local/share/zsh-completions $fpath)
