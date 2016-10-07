@@ -1,6 +1,7 @@
 export DOTFILES=$HOME/Dev/dotfiles-osx
 
+export NVM_DIR=~/.nvm
 # NVM
-[[ -r "$DOTFILES/code/nvm/nvm.sh" ]] && source "$DOTFILES/code/nvm/nvm.sh"
+[[ -r "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
 
 # ^ Loading NVM is the only reason for this file to exists.

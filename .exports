@@ -6,8 +6,6 @@ export DEFAULT_USER=juanchopx2
 
 #export ANDROID_HOME=/usr/local/opt/android-sdk
 
-export NVM_DIR=$DOTFILES/code/nvm
-
 export JAVA_HOME=`/usr/libexec/java_home`
 
 # Prefer US English and use UTF-8
