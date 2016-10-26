@@ -1,6 +1,3 @@
-[submodule "code/oh-my-zsh"]
-	path = code/oh-my-zsh
-	url = git@github.com:robbyrussell/oh-my-zsh.git
 [submodule "code/fonts"]
 	path = code/fonts
 	url = git@github.com:powerline/fonts.git
