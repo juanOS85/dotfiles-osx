@@ -1,6 +1,6 @@
 export DOTFILES=$HOME/Dev/dotfiles-osx
 
-export NVM_DIR=~/.nvm
+export NVM_DIR=$HOME/.nvm
 # NVM
 [[ -r "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
 
