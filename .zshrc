@@ -48,7 +48,7 @@ export UPDATE_ZSH_DAYS=7
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man-pages git git-flow symfony2 tmux)
+plugins=(colored-man-pages git git-flow-avh symfony2 tmux)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -67,7 +67,3 @@ unset dotfile
 
 # Init z (https://github.com/rupa/z)
 source `brew --prefix`/etc/profile.d/z.sh
-
-# Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
-#[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
-
