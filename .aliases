@@ -5,6 +5,7 @@ alias ls="ls -FG"
 # Folder management
 alias md="mkdir -p"
 alias rd="rm -rf"
+alias cp="cp -v"
 
 # `cat` with beautiful colors. Requires Pygments installed.
 # [sudo] pip install Pygments
