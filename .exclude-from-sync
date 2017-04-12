@@ -9,4 +9,4 @@ init.sh
 .DS_Store
 sync.sh
 README.md
-
+.ssh.config

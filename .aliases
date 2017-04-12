@@ -1,11 +1,13 @@
 # Better file list visuatlization
 # Always use color output for `ls`
-alias ls="ls -FG"
+alias ls="ls -AFG"
 
 # Folder management
 alias md="mkdir -p"
 alias rd="rm -rf"
 alias cp="cp -v"
+alias mv="mv -v"
+alias rm="rm -i -v"
 
 # `cat` with beautiful colors. Requires Pygments installed.
 # [sudo] pip install Pygments
@@ -16,4 +18,4 @@ alias c='pygmentize -O style=monokai -f console256 -g'
 alias subl='open -a "Sublime Text"'
 
 # Homebrew: update formulas, upgrade them and clean all
-alias brew-up='brew tap --repair && brew update -v && brew upgrade -v && brew cleanup -s --prune=1'
+alias brew-up='brew tap --repair && brew update -v && brew upgrade -v && brew cleanup -s --prune=1 && brew prune && brew doctor'

@@ -1,12 +1,12 @@
 # Check for Homebrew,
 # Install if it isn't, yet
 if test ! $(which brew); then
-  echo "Installing homebrew..."
+  echo "Installing Homebrew..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 # Install bundle command
-brew tap homebrew/bundle
+brew tap homebrew/bundle -v
 
 # Instll Homebrew packages, bundled together in Brewfile
 brew bundle
@@ -19,6 +19,12 @@ if test ! $(which rvm); then
   curl -sSL https://get.rvm.io | bash -s stable --autolibs=homebrew
 fi
 
+# Install NVM
+echo "Installing NVM..."
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+
+# Set ZSH as default shell
 chsh -s /bin/zsh
 
-rm -f $HOME/.bash_* $HOME/.bashrc $HOME/.profile $HOME/.zcompdump; compinit
+# Remove unused Bash files
+rm -fv $HOME/.bash_* $HOME/.bashrc $HOME/.profile
