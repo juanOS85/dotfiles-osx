@@ -14,7 +14,7 @@ brew 'sqlite'
 brew 'postgres'
 brew 'python', args: ['with-tcl-tk']
 brew 'python3', args: ['with-tcl-tk']
-brew 'php71', args: ['with-homebrew-curl', 'with-homebrew-libxml2', 'with-homebrew-libxslt', 'with-postgresql']
+brew 'php71', args: ['with-homebrew-curl', 'with-homebrew-libxml2', 'with-homebrew-libxslt', 'with-phpdbg', 'with-postgresql']
 brew 'php71-xdebug'
 brew 'php71-imagick'
 brew 'php71-pspell'
