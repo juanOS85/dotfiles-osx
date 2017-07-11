@@ -11,7 +11,7 @@
 [core]
   # global gitignore file
   excludesfile = ~/.gitignore
-  editor = vi
+  editor = vim
 
 [color]
   ui = always
