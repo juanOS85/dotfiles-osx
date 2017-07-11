@@ -11,3 +11,4 @@ sync.sh
 README.md
 .ssh.config
 setup-new-machine
+.vscode.settings

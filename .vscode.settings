@@ -1,0 +1,24 @@
+{
+    // editor
+    "editor.fontFamily": "Source Code Pro for Powerline",
+    "editor.fontWeight": "300",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    // Workbench
+    "workbench.colorTheme": "Monokai",
+    // Window
+    "window.openFilesInNewWindow": "off",
+    // Files
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": false,
+    // CSS
+    "css.lint.duplicateProperties": "error",
+    // SCSS
+    "scss.lint.duplicateProperties": "error",
+    // PHP
+    "php.validate.executablePath": "/usr/local/bin/php",
+    // GIt
+    "git.path": "/usr/local/bin/git"
+}
