@@ -10,5 +10,5 @@ init.sh
 sync.sh
 README.md
 .ssh.config
-setup-new-machine
+setup-new-machine.sh
 .vscode.settings
