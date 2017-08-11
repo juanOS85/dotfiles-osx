@@ -21,7 +21,7 @@ brew 'gpg', args: ['with-gpg-zip', 'with-gpgsplit', 'with-readline']
 brew 'grep'
 brew 'zsh', args: ['with-unicode9']
 brew 'curl', args: ['with-c-ares', 'with-libmetalink', 'with-libssh2', 'with-nghttp2']
-brew 'git', args: ['with-curl', 'with-gettext', 'with-openssl', 'with-pcre']
+brew 'git', args: ['with-curl', 'with-gettext', 'with-openssl', 'with-pcre2']
 brew 'git-flow-avh'
 brew 'go'
 brew 'mariadb'
