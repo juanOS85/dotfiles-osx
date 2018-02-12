@@ -17,5 +17,5 @@ alias c='pygmentize -O style=monokai -f console256 -g'
 # To avoid create symbolic link on */bin folders
 alias subl='open -a "Sublime Text"'
 
-# Homebrew: update formulas, upgrade them and clean all
-alias brew-up='brew tap --repair && brew update -v && brew upgrade -v && brew cleanup -s --prune=1 && brew prune && brew doctor'
+# Update all package managers and clean their caches.
+alias update='brew tap --repair && brew update -v && brew upgrade -v && brew cleanup -s --prune=1 && brew prune && brew doctor | rvm get head && rvm cleanup all && nvm cache clear && npm cache clean --force && composer clear-cache && ruby ~/Dev/slack_delete.rb'
