@@ -24,6 +24,7 @@
 # Beautiful diffs (https://github.com/blog/2188-git-2-9-has-been-released)
 [diff]
   compactionHeuristic = 1
+  colorMoved = zebra
 
 # https://github.com/git/git/tree/master/contrib/diff-highlight
 [pager]
