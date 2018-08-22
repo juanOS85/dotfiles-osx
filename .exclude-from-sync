@@ -12,3 +12,5 @@ README.md
 .ssh.config
 setup-new-machine.sh
 .vscode.settings
+.vim
+.vimrc
