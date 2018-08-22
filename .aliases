@@ -13,9 +13,5 @@ alias rm="rm -i -v"
 # [sudo] pip install Pygments
 alias c='pygmentize -O style=monokai -f console256 -g'
 
-# Programs
-# To avoid create symbolic link on */bin folders
-alias subl='open -a "Sublime Text"'
-
 # Update all package managers and clean their caches.
-alias update='brew tap --repair && brew update -v && brew upgrade -v && brew cleanup -s --prune=1 && brew prune && brew doctor | rvm get head && rvm cleanup all && nvm cache clear && npm cache clean --force && composer clear-cache && ruby ~/Dev/slack_delete.rb'
+alias update='brew tap --repair && brew update -v && brew upgrade -v && brew cleanup -s --prune=1 && brew prune && brew doctor | rvm get head && composer global update && rvm cleanup all && nvm cache clear && npm cache clean --force && composer clear-cache'
