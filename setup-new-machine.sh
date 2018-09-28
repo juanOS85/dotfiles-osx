@@ -27,4 +27,4 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | 
 chsh -s /bin/zsh
 
 # Remove unused Bash files
-rm -fv $HOME/.bash_* $HOME/.bashrc $HOME/.profile
+rm -frv $HOME/.bash_* $HOME/.bashrc $HOME/.profile
