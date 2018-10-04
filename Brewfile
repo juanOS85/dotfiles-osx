@@ -18,5 +18,6 @@ brew 'freetds', args: ['with-unixodbc']
 brew 'php'
 brew 'phpunit'
 brew 'composer'
+brew 'rbenv'
 brew 'vim', args: ['with-gettext', 'with-lua']
 brew 'peco'

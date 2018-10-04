@@ -1,6 +1,3 @@
-# RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -67,3 +64,6 @@ unset dotfile
 
 # Init z (https://github.com/rupa/z)
 source `brew --prefix`/etc/profile.d/z.sh
+
+# Load rbenv automatically
+eval "$(rbenv init -)"
