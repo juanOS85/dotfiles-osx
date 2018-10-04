@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:$HOME/.composer/vendor/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # Default username
-export DEFAULT_USER=juanchopx2
+export DEFAULT_USER=juan.obando
 
 #export ANDROID_HOME=/usr/local/opt/android-sdk
 
