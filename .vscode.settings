@@ -1,23 +1,18 @@
 {
-    // editor
-    "editor.fontFamily": "FiraCode-Regular",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Monokai Dimmed",
+    "files.autoSave": "onFocusChange",
+    "editor.fontFamily": "FiraCode-Retina",
     "editor.tabSize": 2,
-    "editor.wordWrap": "on",
     "editor.renderWhitespace": "all",
+    "editor.wordWrap": "on",
+    "editor.fontLigatures": true,
+    "editor.formatOnPaste": true,
     "editor.renderControlCharacters": true,
-    // Workbench
-    "workbench.colorTheme": "Monokai",
-    // Window
-    "window.openFilesInNewWindow": "off",
-    // Files
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": false,
-    // CSS
-    "css.lint.duplicateProperties": "error",
-    // SCSS
-    "scss.lint.duplicateProperties": "error",
-    // PHP
-    "php.validate.executablePath": "/usr/local/bin/php",
-    // GIt
-    "git.path": "/usr/local/bin/git"
+    "scm.alwaysShowProviders": true,
+    "git.path": "/usr/local/bin/git",
+    "php.validate.executablePath": "/usr/local/bin/php"
 }
