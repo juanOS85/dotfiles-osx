@@ -14,4 +14,4 @@ alias rm="rm -i -v"
 alias c='pygmentize -O style=monokai -f console256 -g'
 
 # Update all package managers and clean their caches.
-alias update='brew update -v && brew upgrade -v && brew cleanup -s --prune=1 && brew prune && brew doctor | rvm get head && composer global update && nvm cache clear && npm cache clean --force && composer clear-cache'
+alias update='brew update -v && brew upgrade -v && brew cleanup -s --prune=1 && brew prune && brew doctor | composer global update && nvm cache clear && npm cache clean --force && composer clear-cache'
