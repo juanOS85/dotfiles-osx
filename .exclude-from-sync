@@ -14,3 +14,4 @@ setup-new-machine.sh
 .vscode.settings
 .vim
 .vimrc
+com.googlecode.iterm2.plist
