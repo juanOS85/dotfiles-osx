@@ -26,7 +26,11 @@ export EDITOR="vim"
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
 
-# grep: Always enable colored output, show line number
-export GREP_OPTIONS="--color=always"
-
+# Exports for PHP
+# Xdebug
 export XDEBUG_CONFIG="idekey=PHPSTORM"
+
+# Composer
+export COMPOSER_MEMORY_LIMIT=-1
+export COMPOSER_ALLOW_XDEBUG=1
+export COMPOSER_DISABLE_XDEBUG_WARN=1
