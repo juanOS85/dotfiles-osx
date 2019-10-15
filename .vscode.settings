@@ -1,6 +1,6 @@
 {
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.colorTheme": "Material Theme Darker",
     "files.autoSave": "onFocusChange",
     "editor.fontFamily": "FiraCode-Retina",
     "editor.tabSize": 2,
