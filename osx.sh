@@ -41,11 +41,10 @@ sudo pmset -a standbydelay 86400
 
 echo "Increasing sound quality for Bluetooth headphones/headsets"
 sudo defaults write bluetoothaudiod "AAC Bitrate" 320
-sudo defaults write bluetoothaudiod "Apple Bitpool Min" 64
-sudo defaults write bluetoothaudiod "Apple Initial Bitpool" 64
+sudo defaults write bluetoothaudiod "Apple Bitpool Min" 80
+sudo defaults write bluetoothaudiod "Apple Initial Bitpool" 80
 sudo defaults write bluetoothaudiod "Enable AptX codec" -bool true
 sudo defaults write bluetoothaudiod "Enable AAC codec" -bool false
-sudo defaults write bluetoothaudiod "Disable AAC codec" -bool false
 
 echo "Disable display from automatically adjusting brightness"
 sudo defaults write /Library/Preferences/com.apple.iokit.AmbientLightSensor "Automatic Display Enabled" -bool false
