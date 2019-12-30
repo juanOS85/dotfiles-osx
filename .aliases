@@ -14,7 +14,7 @@ alias rm="rm -i -v"
 alias c='pygmentize -O style=monokai -f console256 -g'
 
 # Update all package managers and clean their caches.
-alias update='brew update -v && brew upgrade -v && brew cleanup -s --prune=1 && brew doctor | nvm cache clear && npm cache clean --force'
+alias update='softwareupdate -ia --verbose && brew update -v && brew upgrade -v && brew cleanup -s --prune=1 && brew doctor | nvm cache clear && npm cache clean --force'
 
 # Alias to always used Homebrewed Grep and always enable colored output
 alias grep="ggrep --color=always -n"
