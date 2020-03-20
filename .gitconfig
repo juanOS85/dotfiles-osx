@@ -37,6 +37,7 @@
 
 [merge]
   log = true
+  renameLimit = 99999
 
 [push]
   # push changes from the current branch
