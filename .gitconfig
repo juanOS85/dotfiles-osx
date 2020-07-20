@@ -1,4 +1,5 @@
 [user]
+  useConfigOnly = true
   name = Juan Obando
   email = juan.obando.85@outlook.com
 
@@ -46,6 +47,7 @@
 [pull]
   # pull changes to the current branch
   default = current
+  rebase = false
 
 # Set Kaleidoscope app as a optional diff tool
 [difftool "Kaleidoscope"]
