@@ -22,6 +22,8 @@
 	<true/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
+	<key>HideTabNumber</key>
+	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
@@ -76,7 +78,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>515 486 799 448 0 0 1792 1097 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2009 371 1410 867 1792 -195 3008 1669 </string>
+	<string>1821 350 2209 1084 1792 -195 3008 1669 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -686,21 +688,25 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1792, 1120}}</string>
+		<string>{{1792, -195}, {3008, 1692}}</string>
 		<key>topLeft</key>
-		<string>{592, 875}</string>
+		<string>{3011, 1098}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>90ACE33C-C0FD-456F-8E55-8CE90BAC623C</string>
+	<key>NoSyncLastTipTime</key>
+	<real>617029073.89710903</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>14</integer>
+	<integer>24</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>616892985.72717798</real>
+	<real>616981339.59310997</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
+	<true/>
+	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
@@ -1410,6 +1416,11 @@
 	</dict>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>616720185.72704506</real>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+		<string>0000</string>
+	</array>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/juan/Dev/dotfiles-osx</string>
 	<key>PromptOnQuit</key>
@@ -1425,7 +1436,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-07-18T22:19:41Z</date>
+	<date>2020-07-21T19:04:02Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SeparateWindowTitlePerTab</key>
@@ -1437,7 +1448,7 @@
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
 	<key>TabViewType</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>UseBorder</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
