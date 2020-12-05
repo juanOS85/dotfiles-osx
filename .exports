@@ -1,5 +1,5 @@
 # Set ENV variables
-export PATH=$HOME/bin:$HOME/.composer/vendor/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$HOME/bin:$HOME/.composer/vendor/bin:/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # Default username
 export DEFAULT_USER=juan
