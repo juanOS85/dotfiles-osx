@@ -13,11 +13,11 @@ brew bundle
 
 # Install NVM
 echo "Installing NVM..."
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 
 
 # Install Oh-My-ZSH
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Remove unused Bash files
 rm -frv $HOME/.bash_* $HOME/.bashrc $HOME/.profile
