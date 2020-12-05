@@ -1,4 +1,5 @@
 .exclude-from-sync
+Alfred.alfredpreferences
 Brewfile
 osx.sh
 .gitmodules
