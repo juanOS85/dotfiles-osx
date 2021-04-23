@@ -34,3 +34,6 @@ export XDEBUG_CONFIG="idekey=PHPSTORM"
 export COMPOSER_MEMORY_LIMIT=-1
 export COMPOSER_ALLOW_XDEBUG=1
 export COMPOSER_DISABLE_XDEBUG_WARN=1
+
+# To link Rubies to Homebrew's OpenSSL 1.1
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
