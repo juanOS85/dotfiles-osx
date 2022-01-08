@@ -673,5 +673,7 @@
 	<false/>
 	<key>WindowNumber</key>
 	<true/>
+	<key>disableMetalWhenUnplugged</key>
+	<false/>
 </dict>
 </plist>
