@@ -7,7 +7,7 @@ alias md="mkdir -p"
 alias rd="rm -rf"
 alias cp="cp -v"
 alias mv="mv -v"
-alias rm="rm -i -v"
+alias rm="rm -i"
 
 # `cat` with beautiful colors. Requires Pygments installed.
 # [sudo] pip install Pygments
