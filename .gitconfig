@@ -10,9 +10,11 @@
   kmg = mergetool -y -t Kaleidoscope
 
 [core]
+  editor = vim
   # global gitignore file
   excludesfile = ~/.gitignore
-  editor = vim
+  # https://github.blog/2022-06-27-highlights-from-git-2-37/#a-builtin-filesystem-monitor-for-windows-and-macos
+  fsmonitor = true
 
 [color]
   ui = always
