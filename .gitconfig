@@ -37,6 +37,7 @@
   diffFilter = "`brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less"
 
 [merge]
+  conflictStyle = zdiff3
   log = true
   renameLimit = 99999
 
