@@ -3,12 +3,6 @@
   name = Juan Obando
   email = juan.obando.85@outlook.com
 
-[alias]
-  kdi = difftool -y -t Kaleidoscope
-
-  # merge
-  kmg = mergetool -y -t Kaleidoscope
-
 [core]
   editor = vim
   # global gitignore file
@@ -28,6 +22,13 @@
 [diff]
   compactionHeuristic = 1
   colorMoved = zebra
+  tool = Kaleidoscope
+
+[difftool]
+  prompt = false
+
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 
 # https://github.com/git/git/tree/master/contrib/diff-highlight
 [pager]
@@ -42,6 +43,14 @@
   conflictStyle = zdiff3
   log = true
   renameLimit = 99999
+  tool = Kaleidoscope
+
+[mergetool]
+  prompt = false
+
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustexitcode = true
 
 [push]
   # push changes from the current branch
@@ -51,12 +60,3 @@
   # pull changes to the current branch
   default = current
   rebase = false
-
-# Set Kaleidoscope app as a optional diff tool
-[difftool "Kaleidoscope"]
-  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-
-# Set Kaleidoscope app as a optional merge tool
-[mergetool "Kaleidoscope"]
-  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-  trustexitcode = true
