@@ -1,7 +1,11 @@
+# https://blog.1password.com/git-commit-signing/
 [user]
-  useConfigOnly = true
+  email = GITHUB_EMAIL
   name = Juan Obando
-  email = juan.obando.85@outlook.com
+  signingkey = GITHUB_SIGNIN_KEY
+
+[commit]
+  gpgsign = true
 
 [core]
   editor = vim
@@ -30,11 +34,11 @@
 [difftool "Kaleidoscope"]
   cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 
-# https://github.com/git/git/tree/master/contrib/diff-highlight
-[pager]
-  log = "`brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less"
-  show = "`brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less"
-  diff = "`brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less"
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 
 [interactive]
   diffFilter = "`brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less"
@@ -52,11 +56,17 @@
   cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
   trustexitcode = true
 
-[push]
-  # push changes from the current branch
-  default = current
+# https://github.com/git/git/tree/master/contrib/diff-highlight
+[pager]
+  log = "`brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less"
+  show = "`brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less"
+  diff = "`brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less"
 
 [pull]
   # pull changes to the current branch
   default = current
   rebase = false
+
+[push]
+  # push changes from the current branch
+  default = current
