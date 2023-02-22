@@ -45,7 +45,7 @@ export UPDATE_ZSH_DAYS=7
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man-pages docker docker-compose git git-flow-avh symfony2 wp-cli)
+plugins=(colored-man-pages git)
 
 ZSH_DISABLE_COMPFIX=true
 
@@ -66,6 +66,3 @@ unset dotfile
 
 # Init z (https://github.com/rupa/z)
 source `brew --prefix`/etc/profile.d/z.sh
-
-# Load rbenv automatically
-eval "$(rbenv init -)"
