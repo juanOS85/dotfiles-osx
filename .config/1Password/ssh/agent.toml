@@ -1,0 +1,14 @@
+# https://developer.1password.com/docs/ssh/agent/config
+[[ssh-keys]]
+vault = "Work"
+account = "my.1password.com"
+
+[[ssh-keys]]
+item = "GitHub (Auth)"
+vault = "Personal"
+account = "my.1password.com"
+
+[[ssh-keys]]
+item = "GitHub (Signing)"
+vault = "Personal"
+account = "my.1password.com"
