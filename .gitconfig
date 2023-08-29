@@ -38,6 +38,8 @@
   format = ssh
 
 [gpg "ssh"]
+  # https://www.git-tower.com/blog/1password-ssh-tower/
+  allowedSignersFile = "$HOME/.config/git/allowed_signers"
   program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 
 [interactive]
