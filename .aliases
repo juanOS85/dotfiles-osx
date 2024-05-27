@@ -10,7 +10,7 @@ alias mv="mv -v"
 alias rm="rm -i"
 
 # Update all package managers and clean their caches.
-alias update="brew outdated -v && brew upgrade -v && brew cleanup -s --prune=all && brew doctor -v | nvm cache clear && npm cache clean --force"
+alias update="brew outdated -v && brew upgrade -v && brew cleanup -s --prune=all && brew doctor -v"
 
 # Alias to always used Homebrewed Grep and always enable colored output
 alias grep="ggrep --color=always -n"

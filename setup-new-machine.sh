@@ -11,11 +11,6 @@ brew tap homebrew/bundle -v
 # Instll Homebrew packages, bundled together in Brewfile
 brew bundle
 
-# Install NVM
-echo "Installing NVM..."
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
-
-
 # Install Oh-My-ZSH
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 

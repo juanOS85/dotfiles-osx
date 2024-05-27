@@ -1,6 +1,8 @@
 # Set ENV variables
 export PATH=$HOME/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/local/sbin:$PATH
 
+export DOTFILES=$HOME/Dev/dotfiles-osx
+
 # Default username
 export DEFAULT_USER=juan
 
