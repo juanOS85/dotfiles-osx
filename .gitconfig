@@ -1,78 +1,78 @@
 # https://blog.1password.com/git-commit-signing/
 [user]
-  email = GITHUB_EMAIL
-  name = Juan Obando
-  signingkey = GITHUB_SIGNIN_KEY
+	email = GITHUB_EMAIL
+	name = Juan Obando
+	signingkey = GITHUB_SIGNIN_KEY
 
 [commit]
   gpgsign = true
 
 [core]
-  editor = vim
-  # global gitignore file
-  excludesfile = ~/.gitignore
-  # https://github.blog/2022-06-27-highlights-from-git-2-37/#a-builtin-filesystem-monitor-for-windows-and-macos
-  fsmonitor = true
+	editor = vim
+	# global gitignore file
+	excludesfile = ~/.gitignore
+	# https://github.blog/2022-06-27-highlights-from-git-2-37/#a-builtin-filesystem-monitor-for-windows-and-macos
+	fsmonitor = true
 
 [color]
-  ui = always
+	ui = always
 
 [color "status"]
-  added = 046
-  changed = 226
-  untracked = 009
+	added = 046
+	changed = 226
+	untracked = 009
 
 # Beautiful diffs (https://github.com/blog/2188-git-2-9-has-been-released)
 [diff]
-  compactionHeuristic = 1
-  colorMoved = zebra
-  tool = Kaleidoscope
+	compactionHeuristic = 1
+	colorMoved = zebra
+	tool = Kaleidoscope
 
 [difftool]
-  prompt = false
+	prompt = false
 
 [difftool "Kaleidoscope"]
-  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 
 [gpg]
-  format = ssh
+	format = ssh
 
 [gpg "ssh"]
-  # https://www.git-tower.com/blog/1password-ssh-tower/
-  allowedSignersFile = "$HOME/.config/git/allowed_signers"
-  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+	# https://www.git-tower.com/blog/1password-ssh-tower/
+	allowedSignersFile = "$HOME/.config/git/allowed_signers"
+	program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 
 [interactive]
-  diffFilter = "`brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less"
+	diffFilter = "`brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less"
 
 [merge]
-  conflictStyle = zdiff3
-  log = true
-  renameLimit = 99999
-  tool = Kaleidoscope
+	conflictStyle = zdiff3
+	log = true
+	renameLimit = 99999
+	tool = Kaleidoscope
 
 [mergetool]
-  prompt = false
+	prompt = false
 
 [mergetool "Kaleidoscope"]
-  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-  trustexitcode = true
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
 
 # https://github.blog/2023-08-21-highlights-from-git-2-42/#faster-object-traversals-with-bitmaps
 [pack]
-  useBitmapBoundaryTraversal = true
+	useBitmapBoundaryTraversal = true
 
 # https://github.com/git/git/tree/master/contrib/diff-highlight
 [pager]
-  log = "`brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less"
-  show = "`brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less"
-  diff = "`brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less"
+	log = "`brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less"
+	show = "`brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less"
+	diff = "`brew --prefix`/share/git-core/contrib/diff-highlight/diff-highlight | less"
 
 [pull]
-  # pull changes to the current branch
-  default = current
-  rebase = false
+	# pull changes to the current branch
+	default = current
+	rebase = false
 
 [push]
-  # push changes from the current branch
-  default = current
+	# push changes from the current branch
+	default = current
