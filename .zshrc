@@ -66,3 +66,5 @@ unset dotfile
 
 # Init z (https://github.com/rupa/z)
 source `brew --prefix`/etc/profile.d/z.sh
+
+eval "$(fnm env --use-on-cd)"
