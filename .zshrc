@@ -59,7 +59,7 @@ ZSH_DISABLE_COMPFIX=true
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-for dotfile in $HOME/.{exports,aliases,functions}; do
+for dotfile in $HOME/.{exports,aliases}; do
   [ -r "$dotfile" ] && source "$dotfile"
 done
 unset dotfile
